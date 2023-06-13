@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ExpenseForm.css";
+import Navbar from "../Expenses/Navbar";
 
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
@@ -39,6 +40,7 @@ const ExpenseForm = (props) => {
 
   return (
     <div>
+       <Navbar/>
       <div className="new-expense_controls">
         <div className="new-expense_control">
           <label>Title</label>
